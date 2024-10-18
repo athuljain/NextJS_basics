@@ -18,10 +18,13 @@ export default function ProductDetails() {
       <h1>Product details</h1>
       <div>
       <h2>
+
+<h1>Product Id : {id}</h1>
+
         Name: {name} for {id} <br></br>
         Price :{price}
       </h2>
-      </div>
+      </div> 
      
 
       <Link href={"/Products"}>Product page</Link>

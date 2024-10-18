@@ -38,7 +38,12 @@ const ProductData:{id:number;name:string;price:number}[]=[
               {/* Link to the product details page */}
               <Link href={`/Products/${data.id}?name=${data.name}&price=${data.price}`}>
                 View Details
-              </Link>
+              </Link> 
+
+
+              <Link href={`/Products/${data.id}`}>Product View</Link>
+
+             
             </div>
           ))}
         </div>
