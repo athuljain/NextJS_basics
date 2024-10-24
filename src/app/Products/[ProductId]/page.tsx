@@ -9,6 +9,9 @@ export default function ProductDetails() {
   console.log("Params",params);
   
   const searchParams = useSearchParams();
+
+  console.log("search params",searchParams);
+  
   const id = params.ProductId; // dynamic route parameter
  const name = searchParams.get("name"); // query parameter
  const price=searchParams.get("price")
