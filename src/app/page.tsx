@@ -10,7 +10,8 @@ export default function Home() {
        <h1>Home Page</h1>
      <Link href={'/about'}><p>About page</p>
      </Link>  
-
+     <Link href={'/contact'}><p>Contact page</p>
+     </Link>  
 
      <Link href={'/Products'}>Products Page</Link>
     </div>
