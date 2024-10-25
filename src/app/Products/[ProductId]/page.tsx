@@ -1,36 +1,23 @@
-"use client";
+import { products } from "../../../../utils/constants";
+
+interface paramsType{params:{productId:string}}
 
 
-import Link from "next/link";
-import { useSearchParams, useParams } from "next/navigation";
+export default function ProductView({params}:paramsType){
+    console.log("params",params);
 
-export default function ProductDetails() {
-  const params = useParams();
-  console.log("Params",params);
-  
-  const searchParams = useSearchParams();
+    const id:number=parseInt(params.productId)
+    
+    const ProductV=products[id]
+    console.log("Product:",ProductV);
+    
+    
+    return(
+        <div>
+            <h1>Product View</h1>
 
-  console.log("search params",searchParams);
-  
-  const id = params.ProductId; // dynamic route parameter
- const name = searchParams.get("name"); // query parameter
- const price=searchParams.get("price")
-
-  return (
-    <div>
-      <h1>Product details</h1>
-      <div>
-      <h2>
-
-<h1>Product Id : {id}</h1>
-
-        Name: {name} for {id} <br></br>
-        Price :{price}
-      </h2>
-      </div> 
-     
-
-      <Link href={"/Products"}>Product page</Link>
-    </div>
-  );
+            <h1>{ProductV.name}</h1>
+            <h2>{ProductV.price}</h2>
+        </div>
+    )
 }
