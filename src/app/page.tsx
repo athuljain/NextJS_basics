@@ -14,6 +14,8 @@ export default function Home() {
      </Link>  
 
      <Link href={'/Products'}>Products Page</Link>
+<br></br>
+     <Link href={'/fetchData'}>Server Fetch</Link>
     </div>
   );
 }
