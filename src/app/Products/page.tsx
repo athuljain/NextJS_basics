@@ -2,9 +2,6 @@ import Link from "next/link";
 import { products } from "../../../utils/constants";
 
 export default function Products(){
-
-
-
     return(
         <div>
         <h1>Products Page</h1>
