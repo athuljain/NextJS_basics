@@ -1,21 +1,24 @@
 
 import Link from "next/link";
 
-export default function Home() {
 
+export default function Home() {
 
 
   return (
     <div className="">
-       <h1>Home Page</h1>
-     <Link href={'/about'}><p>About page</p>
-     </Link>  
-     <Link href={'/contact'}><p>Contact page</p>
-     </Link>  
+      <h1>Home Page</h1>
+      <Link href={'/about'}>
+        <p>About page</p>
+      </Link>
+      <Link href={'/contact'}>
+        <p>Contact page</p>
+      </Link>
+      <Link href={'/Products'}>Products Page</Link>
+      <br />
+      <Link href={'/fetchData'}>Server Fetch</Link>
 
-     <Link href={'/Products'}>Products Page</Link>
-<br></br>
-     <Link href={'/fetchData'}>Server Fetch</Link>
+     
     </div>
   );
 }
